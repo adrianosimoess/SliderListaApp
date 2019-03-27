@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:SliderListaApp" 
+             x:Class="SliderListaApp.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Checar" 
+                     Clicked="visualizarMunicipio"/>
+    </ContentPage.ToolbarItems> 
+    
+    <StackLayout>
+        
+        <Label Text="Valor do slider"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               FontSize="60"
+               x:Name="label_uf"/>
+            
+        <Slider Margin="10, 30, 10, 140"
+                x:Name="slider_blaster"
+                Minimum="0"
+                Maximum="26"
+                ValueChanged="naMudancaDeValorDoSlider"/>
+
+    </StackLayout>
+        
+</ContentPage>
